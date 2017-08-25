@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const yes = argv => {
+  const arg = argv[2] || 'y'
+
+	while(true) {
+    console.log(arg)
+  }
+}
+
+yes(process.argv)
