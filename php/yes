@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+
+<?php
+$arg = $argv[1];
+if(strlen($arg) == 0) {
+  $arg = 'y';
+}
+
+while(true) {
+  echo $arg . "\n";
+}
