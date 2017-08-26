@@ -1,0 +1,14 @@
+#!/usr/bin/env guile \
+-e main
+!#
+
+(define (getArgv)
+  (let ((argv (program-arguments)))
+    (if (= (length argv) 2) (cadr argv) "y")))
+
+(define (main args)
+  (let ((argv (getArgv)))
+    (while #t
+      (display argv) 
+      (newline))))
+
