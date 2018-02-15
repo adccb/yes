@@ -1,20 +1,10 @@
 #!/usr/bin/env ruby
 
-class Yes
-  def initialize
-    @argv = ARGV
-  end
-
-  def yes
-    while(true) do
-      if(@argv.any?)
-        puts @argv
-      else
-        puts 'y'
-      end
-    end
+while(true) do
+  if(ARGV.any?)
+    puts ARGV
+  else
+    puts 'y'
   end
 end
 
-yes = Yes.new
-yes.yes
